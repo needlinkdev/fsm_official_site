@@ -1,33 +1,196 @@
-img {
-    width: 100%;
-    height: 100%;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
+  background-color: rgb(191, 234, 215);
 }
-#header {
-    color: rgb(61, 180, 61);
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  text-align: center;
+  height: 100vh;
+}
+
+.header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image {
+  width: 45px;
+  height: 45px;
+}
+
+.contact-us {
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.content {
+  padding: 45px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-image {
+  width: 80px;
+  height: 80px;
+  background-color: #45A845;
+  background-image: linear-gradient(to bottom right, #45A845, #45A845,  black);
+  border-radius: 22px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 5px 5px 10px 7px rgba(0, 0, 0, 0.2);
+}
+
+.content-text h1 {
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
 }
-#download-btn {
-    background-color: rgb(61, 180, 61);
-    color: #fff;
-    padding: 7px 16px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
+
+.description {
+  color: #4b5563;
+  font-size: 0.90rem;
+  margin-bottom: 1.8rem;
 }
-#download-btn:hover {
-    background-color: rgb(61, 180, 61);
+
+.subtitle {
+  color: #6b7280;
+  font-size: 0.7rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.download-btn {
+  background-color: #171717;
+  padding: 0.73rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  width: 220px;
+}
+
+.download-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.web-btn {
+  background-color: white;
+  padding: 0.73rem;
+  border-radius: 27px;
+  border: 1px solid #45A845;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  width: 220px;
+}
+
+.web-btn a {
+  text-decoration: none;
+  color: #45A845;
+}
+
+.disclaimer {
+  background-color: #FFF3C1;
+  padding: 1rem;
+  border: 1px solid #F4CE2F;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.disclaimer-header {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.disclaimer-title {
+  color: #2B2B2B;
+  text-align: start;
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+
+.disclaimer-text {
+  text-align: start;
+  color: #A85E1E;
+  font-size: 0.8rem;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.newsletter-title {
+  color: #171717;
+  font-weight: 500;
+  font-size: 1.0rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.email-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 12px;
+}
+
+.email-input:focus {
+  border-color: #45A845;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+.join-btn {
+  background-color: #45A845;
+  background-image: linear-gradient(to bottom right, rgb(24, 24, 24, 0.5), #45A845, #45A845, #45A845);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter-description {
+  color: #6b7280;
+  font-size: 0.7rem;
 }
