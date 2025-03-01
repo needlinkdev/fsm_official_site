@@ -98,7 +98,7 @@ body {
   width: 220px;
 }
 
-.download-btn a {
+.download-btn-link {
   text-decoration: none;
   color: white;
 }
@@ -117,7 +117,7 @@ body {
   width: 220px;
 }
 
-.web-btn a {
+.web-btn-link {
   text-decoration: none;
   color: #45A845;
 }
