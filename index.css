@@ -2,9 +2,12 @@ body {
   background-color: rgb(191, 234, 215);
 }
 
-img {
+img,
+video {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 * {
@@ -61,6 +64,10 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.section-one p {
+  padding: 0px 15px;
 }
 
 .header-1 {
@@ -131,6 +138,18 @@ svg {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px;
   overflow: hidden;
+}
+
+.setup {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 200px;
+  height: 100px;
+}
+
+.setup video {
+  border-radius: 15px;
 }
 
 .content {
