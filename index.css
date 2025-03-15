@@ -60,6 +60,7 @@ svg {
   padding: 15px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .header-1 {
@@ -90,7 +91,7 @@ svg {
 }
 
 .title-1 h1 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -110,6 +111,26 @@ svg {
 
 .menu-1 div a{
   color: black;
+}
+
+.screenshots {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+}
+
+.page {
+  flex: 0 0 auto;
+  width: 120px; /* Adjust width as needed */
+  scroll-snap-align: start; /* Aligns items nicely when scrolling */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .content {
