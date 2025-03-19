@@ -17,6 +17,10 @@ video {
   font-family: "Poppins", serif;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   text-align: center;
   height: 100vh;
@@ -152,35 +156,126 @@ svg {
   border-radius: 15px;
 }
 
-.content {
-  padding: 45px 20px;
+.section-two {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.get-app {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.content-text h1 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
+.explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 2.5rem;
 }
+
+.explainer {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 16rem;
+  height: 8.1rem;
+}
+
+.explainer video {
+  border-radius: 15px;
+}
+
+.section-three {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rating p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.rating h2 {
+  font-size: 2rem;
+}
+
+.stars {
+  display: flex;
+}
+
+ .reviews {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+ }
+
+ .reviews div {
+  padding: 10px;
+  flex: 0 0 auto;
+  width: 250px; /* Adjust width as needed */
+  scroll-snap-align: start; /* Aligns items nicely when scrolling */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+ }
+
+ .reviews div .name {
+  font-size: 0.65rem;
+ }
+
+ .reviews div .review {
+  font-size: 0.85rem;
+ }
+
+ .section-four {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 15px;
+  padding-bottom: 4rem;
+ }
+
+ .community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+ }
 
 .description {
   color: #4b5563;
   font-size: 0.90rem;
-  margin-bottom: 1.8rem;
 }
 
 .subtitle {
   color: #6b7280;
   font-size: 0.7rem;
+  padding: 0px 20px;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin-bottom: 2rem;
 }
 
 .download-btn {
@@ -226,7 +321,7 @@ svg {
   padding: 1rem;
   border: 1px solid #F4CE2F;
   border-radius: 12px;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .disclaimer-header {
