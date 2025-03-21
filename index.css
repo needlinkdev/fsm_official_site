@@ -388,3 +388,34 @@ svg {
   color: #6b7280;
   font-size: 0.7rem;
 }
+
+.screenshot-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem 0rem;
+  justify-content: center;
+}
+
+.close-btn {
+  display: flex;
+  align-self: flex-end;
+  padding-right: 0.8rem;
+}
+
+.screenshot {
+  height: calc(100% - 5rem);
+}
+
+.screenshot img {
+  object-fit: cover;
+}
+
+.hide {
+  display: none;
+}

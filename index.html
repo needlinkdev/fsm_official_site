@@ -20,6 +20,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -69,34 +70,11 @@
         </div>
       </div>
     </div>
-    <div class="screenshots">
-      <div class="page">
-        <img src="images/screenshots/homePage.jpg" alt="header logo" />
-      </div>
-      <div class="page">
-        <img src="images/screenshots/pq_page.jpg" alt="header logo" />
-      </div>
-      <div class="page">
-        <img src="images/screenshots/select_course.jpg" alt="header logo" />
-      </div>
-      <div class="page">
-        <img src="images/screenshots/study_pastQuestion.jpg" alt="header logo" />
-      </div>
-      <div class="page">
-        <img src="images/screenshots/cbt_practice.jpg" alt="header logo" />
-      </div>
-      <div class="page">
-        <img src="images/screenshots/invites.jpg" alt="header logo" />
-      </div>
-      <div class="page">
-        <img src="images/screenshots/receipt.jpg" alt="header logo" />
-      </div>
-      <div class="page">
-        <img src="images/screenshots/cgpa.jpg" alt="header logo" />
-      </div>
+    <div class="screenshots" id="screenshots">
     </div>
     <div class="setup">
-      <video loop controls autoplay src="videos/test video.mp4"></video>
+      <!-- <video loop controls src="videos/test video.mp4"></video> -->
+      <video loop controls src="videos/test video.mp4"></video>
     </div>
     <p class="description">
       A simple, effective app for FUTO students offering an updated
@@ -234,6 +212,16 @@
       </p>
     </div>
   </section>
-</body>
 
+  <!-- full screenshot -->
+  <section class="screenshot-section hide" id="screenshot-section">
+    <div class="close-btn" id="close-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+        <path fill="none" stroke="white" stroke-linecap="round" stroke-width="2.8" d="M12 21a9 9 0 1 1 0-18a9 9 0 0 1 0 18zM9 9l6 6m0-6l-6 6" />
+      </svg>
+    </div>
+    <div class="screenshot" id="screenshot">
+    </div>
+  </section>
+</body>
 </html>
