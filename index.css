@@ -149,11 +149,12 @@ svg {
   justify-self: center;
   align-self: center;
   width: 200px;
-  height: 100px;
+  height: 150px;
 }
 
 .setup video {
   border-radius: 15px;
+  object-fit: contain;
 }
 
 .section-two {
