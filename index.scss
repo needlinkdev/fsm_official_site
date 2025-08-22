@@ -1,0 +1,167 @@
+img,
+video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: "Poppins", serif;
+    font-family: "Manrope", serif;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-btn {
+    background-color: #09B109;
+    color: white;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 4px 24px rgba(9, 177, 9, 0.6),
+        inset 0 4px 4px rgba(255, 255, 255, 0.25);
+    padding: 7px 14px;
+    font-weight: 500;
+    font-size: 12px;
+
+    span {
+        font-size: 20px;
+    }
+}
+
+.web-btn {
+    border: 1px solid #CCCCCC;
+    padding: 7px 14px;
+    font-weight: 500;
+    font-size: 12px;
+
+    span {
+        font-size: 20px;
+    }
+}
+
+svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    width: 23px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(178, 238, 178, 1), white);
+    border-bottom: 1px solid rgba(176, 176, 176, 0.3);
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .image {
+        width: 45px;
+        height: 45px;
+    }
+
+    .support {
+        width: 26px;
+        height: 24px;
+    }
+}
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.3rem;
+    padding: 0px 16px;
+    gap: 40px;
+
+    .main {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .logo {
+            background-image: linear-gradient(to bottom right, #45A845 0, #45A845 60%, #1B421B);
+            border-radius: 19.5px;
+            padding: 10px;
+
+            img {
+                width: 62px;
+                height: 62px;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h1 {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 12px;
+                font-weight: 500;
+                color: #8C8C8C;
+            }
+
+            >div:first-child {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .buttons {
+                display: flex;
+                gap: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .whatsapp-community {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 11px;
+    }
+}
+
+.hide {
+    display: none;
+}
