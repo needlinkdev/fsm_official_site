@@ -16,6 +16,7 @@ video {
 
 li {
     list-style: none;
+    margin: 0px;
 }
 
 body {
@@ -185,7 +186,7 @@ header {
         }
     }
 
-    .hide {
+    .screenshots::-webkit-scrollbar {
         display: none;
     }
 }
@@ -244,4 +245,185 @@ header {
             }
         }
     }
+}
+
+.section-four {
+    display: flex;
+    padding: 24px 14px 24px 14px;
+    margin-left: 10px;
+    gap: 8px;
+    overflow-x: auto;
+    scroll-snap-type: x none;
+    // scrollbar-width: none; /* Firefox */
+
+    .video {
+        border-radius: 13.21px;
+        flex: 0 0 auto;
+        overflow: hidden;
+        width: 270px;
+        height: 290px;
+        scroll-snap-align: start;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.section-four::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.section-five {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+
+    h3 {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .rating {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            font-weight: 600;
+            font-size: 51px;
+            letter-spacing: -2%;
+        }
+
+        .stars {
+            display: flex;
+        }
+    }
+
+    .reviews {
+        gap: 12px;
+        display: flex;
+        padding: 20px 14px 20px 14px;
+        overflow-x: auto;
+        scroll-snap-type: x none;
+        width: 100%;
+
+        .review {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 16px 24px;
+            border-radius: 13.21px;
+            flex: 0 0 auto;
+            overflow: hidden;
+            width: 320px;
+            scroll-snap-align: start;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+
+            img {
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                object-fit: fill;
+            }
+
+            main {
+                display: flex;
+                gap: 12px;
+
+                div {
+                    h3 {
+                        font-size: 17.5px;
+                        font-weight: 600;
+                        text-align: start;
+                    }
+
+                    .stars {
+                        display: flex;
+                    }
+                }
+            }
+
+            p {
+                font-size: 0.9rem;
+                text-align: start;
+            }
+        }
+    }
+
+    .reviews::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.section-six {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    h3 {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    form {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 0.5rem;
+        border: 1px solid #CCCCCC;
+        border-radius: 12px;
+        width: 100%;
+
+        input {
+            flex: 1;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 12px;
+            outline: none;
+        }
+
+        &:focus-within {
+            border-color: #45A845;
+            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+        }
+
+        button {
+            background-image: linear-gradient(to bottom right, rgba(0, 172, 0, 1), rgba(79, 220, 79, 1));
+            box-shadow: 0px 0px 4px rgba(88, 101, 88, 1);
+            padding: 4px 10px;
+            margin: 4px;
+            border-radius: 8px;
+            border: none;
+
+            span {
+                color: white;
+                font-size: 16px;
+            }
+        }
+    }
+
+    p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+.hide {
+    display: none;
 }

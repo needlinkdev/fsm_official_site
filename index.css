@@ -15,6 +15,7 @@ video {
 
 li {
   list-style: none;
+  margin: 0px;
 }
 
 body {
@@ -168,7 +169,7 @@ header .support {
   border-radius: 12px;
   overflow: hidden;
 }
-.section-two .hide {
+.section-two .screenshots::-webkit-scrollbar {
   display: none;
 }
 
@@ -219,4 +220,162 @@ header .support {
 }
 .section-three > div:last-child .buttons button {
   width: 100%;
+}
+
+.section-four {
+  display: flex;
+  padding: 24px 14px 24px 14px;
+  margin-left: 10px;
+  gap: 8px;
+  overflow-x: auto;
+  scroll-snap-type: x none;
+}
+.section-four .video {
+  border-radius: 13.21px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  width: 270px;
+  height: 290px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+}
+
+.section-four::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+.section-five {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 16px;
+}
+.section-five h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.section-five .rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section-five .rating h2 {
+  font-weight: 600;
+  font-size: 51px;
+  letter-spacing: -2%;
+}
+.section-five .rating .stars {
+  display: flex;
+}
+.section-five .reviews {
+  gap: 12px;
+  display: flex;
+  padding: 20px 14px 20px 14px;
+  overflow-x: auto;
+  scroll-snap-type: x none;
+  width: 100%;
+}
+.section-five .reviews .review {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 24px;
+  border-radius: 13.21px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  width: 320px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+}
+.section-five .reviews .review img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.section-five .reviews .review main {
+  display: flex;
+  gap: 12px;
+}
+.section-five .reviews .review main div h3 {
+  font-size: 17.5px;
+  font-weight: 600;
+  text-align: start;
+}
+.section-five .reviews .review main div .stars {
+  display: flex;
+}
+.section-five .reviews .review p {
+  font-size: 0.9rem;
+  text-align: start;
+}
+.section-five .reviews::-webkit-scrollbar {
+  display: none;
+}
+
+.section-six {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.section-six h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.section-six form {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 12px;
+  width: 100%;
+}
+.section-six form input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+.section-six form:focus-within {
+  border-color: #45A845;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+.section-six form button {
+  background-image: linear-gradient(to bottom right, rgb(0, 172, 0), rgb(79, 220, 79));
+  box-shadow: 0px 0px 4px rgb(88, 101, 88);
+  padding: 4px 10px;
+  margin: 4px;
+  border-radius: 8px;
+  border: none;
+}
+.section-six form button span {
+  color: white;
+  font-size: 16px;
+}
+.section-six p {
+  font-size: 12px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer p {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.hide {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
