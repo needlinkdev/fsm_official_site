@@ -79,9 +79,7 @@ header {
   left: 0;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  z-index: 1000;
   background: linear-gradient(to bottom, rgb(178, 238, 178), white);
-  border-bottom: 1px solid rgba(176, 176, 176, 0.3);
   padding: 15px 15px;
   display: flex;
   justify-content: space-between;
@@ -94,6 +92,18 @@ header .image {
 header .support {
   width: 26px;
   height: 24px;
+}
+
+.header-with-border {
+  border-bottom: 1px solid rgba(176, 176, 176, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 1000;
+}
+
+.header-without-border {
+  border: none;
+  box-shadow: none;
+  z-index: 0;
 }
 
 .section-one {
@@ -378,4 +388,21 @@ footer p {
 
 .hide {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(to bottom, rgb(178, 238, 178) 8%, white 20%);
+    background-repeat: no-repeat;
+    /* optional: keeps it fixed when scrolling */
+    background-size: cover;
+  }
+  header {
+    background: rgb(178, 238, 178);
+    padding: 2vh 5%;
+  }
+  .section-one {
+    margin-top: 15vh;
+    padding: 0px 5%;
+  }
 }/*# sourceMappingURL=index.css.map */
