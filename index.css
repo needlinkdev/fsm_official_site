@@ -93,6 +93,10 @@ header .support {
   width: 26px;
   height: 24px;
 }
+header .support img {
+  width: 26px;
+  height: 24px;
+}
 
 .header-with-border {
   border-bottom: 1px solid rgba(176, 176, 176, 0.3);
@@ -400,6 +404,32 @@ footer p {
   header {
     background: rgb(178, 238, 178);
     padding: 2vh 5%;
+  }
+  header .support {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header .support img {
+    width: 26px;
+    height: 24px;
+  }
+  header .support h3 {
+    display: block;
+    font-size: 21.6px;
+    letter-spacing: -4%;
+    font-weight: 600;
+  }
+  header > div:last-child {
+    display: flex;
+    gap: 20px;
+  }
+  header > div:last-child a {
+    display: flex;
   }
   .section-one {
     margin-top: 15vh;

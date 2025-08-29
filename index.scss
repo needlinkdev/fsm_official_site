@@ -97,6 +97,11 @@ header {
     .support {
         width: 26px;
         height: 24px;
+
+        img {
+            width: 26px;
+            height: 24px;
+        }
     }
 }
 
@@ -451,6 +456,35 @@ footer {
     header {
         background: rgba(178, 238, 178, 1);
         padding: 2vh 5%;
+
+        .support {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            height: fit-content;
+
+            img {
+                width: 26px;
+                height: 24px;
+            }
+
+            h3 {
+                display: block;
+                font-size: 21.6px;
+                letter-spacing: -4%;
+                font-weight: 600;
+            }
+        }
+
+        >div:last-child {
+            display: flex;
+            gap: 20px;
+
+            a {
+                display: flex;
+            }
+        }
     }
 
     .section-one {
