@@ -52,7 +52,7 @@ const displayScreenshots = () => {
     const div = document.createElement('div');
     div.classList.add('page');
     div.id = `screenshot-${screenshot.id}`;
-    div.innerHTML = `<img src="${screenshot.image}" alt="header logo" />`;
+    div.innerHTML = `<img src="${screenshot.image}" alt="App preview ${screenshot.id}" />`;
 
     screenshotsUI.appendChild(div);
 
