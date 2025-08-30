@@ -146,6 +146,7 @@ header {
             gap: 20px;
 
             h2 {
+                text-align: start;
                 font-size: 20px;
                 font-weight: 700;
             }
@@ -175,6 +176,7 @@ header {
         align-items: center;
         gap: 5px;
         font-size: 11px;
+        text-align: start;
     }
 }
 
@@ -236,7 +238,7 @@ header {
         }
     }
 
-    >div:last-child {
+    .install-app {
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -453,6 +455,16 @@ footer {
         background-size: cover;
     }
 
+    .app-btn {
+        padding: 7px 20px;
+        font-size: 1.3rem;
+    }
+
+    .web-btn {
+        padding: 7px 20px;
+        font-size: 1.3rem;
+    }
+
     header {
         background: rgba(178, 238, 178, 1);
         padding: 2vh 5%;
@@ -479,6 +491,7 @@ footer {
 
         >div:last-child {
             display: flex;
+            align-items: center;
             gap: 20px;
 
             a {
@@ -490,5 +503,196 @@ footer {
     .section-one {
         margin-top: 15vh;
         padding: 0px 5%;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .main {
+            gap: 2.8rem;
+
+            .logo {
+                border-radius: 3rem;
+                padding: 24px;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+
+            .content {
+                gap: 40px;
+
+                h2 {
+                    font-size: 36px;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .buttons {
+                    gap: 20px;
+                }
+            }
+        }
+
+        .whatsapp-community {
+            font-size: 1rem;
+        }
+    }
+
+    .section-two {
+        margin-top: 3rem;
+        padding: 10px 5%;
+
+        .screenshots {
+            gap: 18px;
+            padding-bottom: 2rem;
+
+            .page {
+                width: 190px;
+                border-radius: 18px;
+            }
+        }
+    }
+
+    .section-three {
+        padding: 32px 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+
+        >div:first-child {
+            .setup {
+                display: none;
+            }
+        }
+
+        >div:last-child {
+            display: flex;
+            justify-content: space-between;
+
+            .setup {
+                display: flex;
+                height: 12rem;
+                width: 35%;
+                border-radius: 20px;
+                box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+
+                video {
+                    object-fit: scale-down;
+                }
+            }
+
+            .install-app {
+                width: 35%;
+                gap: 20px;
+
+                p {
+                    font-size: 1.2rem;
+                }
+
+                .buttons {
+                    padding: 0px 5%;
+                    gap: 15px;
+                }
+            }
+        }
+    }
+
+    .section-four {
+        display: flex;
+        padding: 3.2rem 5% 3.8rem 5%;
+        gap: 18px;
+
+        .video {
+            border-radius: 20px;
+            width: 390px;
+        }
+    }
+
+    .section-five {
+        padding: 10px 2% 10px 5%;
+
+        h3 {
+            font-size: 21px;
+            padding-left: 16px;
+        }
+
+        .rating {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+
+        .reviews {
+            gap: 18px;
+
+            .review {
+                gap: 16px;
+                border-radius: 20px;
+                width: 360px;
+
+                img {
+                    border-radius: 50%;
+                    height: 60px;
+                    width: 60px;
+                    object-fit: fill;
+                }
+
+                main {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    div {
+                        h3 {
+                            padding: 0px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .section-six {
+        margin-top: 3.2rem;
+        margin-bottom: 5rem;
+        padding: 16px 5%;
+        gap: 10px;
+        align-items: start;
+        width: 40%;
+
+        h3 {
+            font-size: 22.6px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 20px;
+        gap: 5%;
+
+        p {
+            font-size: 1rem;
+        }
     }
 }
