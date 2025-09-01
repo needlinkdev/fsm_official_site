@@ -37,10 +37,6 @@ const screenshots = [
   },
   {
     id: 7,
-    image: "images/screenshots/receipt.jpg",
-  },
-  {
-    id: 8,
     image: "images/screenshots/cgpa.jpg",
   },
 ];

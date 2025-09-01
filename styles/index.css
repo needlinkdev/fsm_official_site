@@ -310,8 +310,8 @@ header .support img {
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .section-five .reviews .review main {
   display: flex;
@@ -593,8 +593,8 @@ footer p {
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    -o-object-fit: fill;
-       object-fit: fill;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .section-five .reviews .review main {
     display: flex;
