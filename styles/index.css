@@ -31,7 +31,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 6px;
   font-size: 0.875rem;
   background-color: white;
 }
@@ -47,9 +47,9 @@ a {
   text-decoration: none;
   border: none;
   box-shadow: 0 4px 24px rgba(9, 177, 9, 0.6), inset 0 4px 4px rgba(255, 255, 255, 0.25);
-  padding: 7px 14px;
+  padding: 7px 12px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 11px;
 }
 .app-btn span {
   font-size: 20px;
@@ -57,9 +57,11 @@ a {
 
 .web-btn {
   border: 1px solid #CCCCCC;
-  padding: 7px 14px;
+  padding: 7px 12px;
   font-weight: 500;
-  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 11px;
 }
 .web-btn span {
   font-size: 20px;
@@ -160,7 +162,7 @@ header .support img {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 11px;
+  font-size: 13px;
   text-align: start;
 }
 
@@ -395,32 +397,33 @@ footer p {
 .screenshot-section {
   position: fixed;
   z-index: 2000;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: black;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 2rem 0rem;
+  gap: 18px;
+  padding: 6rem 0rem;
   justify-content: center;
-  align-items: flex-end;
 }
 .screenshot-section .close-btn {
-  padding-right: 0.8rem;
+  padding-right: 1rem;
   width: -moz-fit-content;
   width: fit-content;
-  height: 24px;
+  align-self: flex-end;
+  height: 26px;
   color: white;
 }
 .screenshot-section .close-btn span {
-  font-size: 24px;
+  font-size: 26px;
 }
 .screenshot-section .screenshot {
   width: 100%;
+  height: 100%;
 }
 .screenshot-section .screenshot img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hide {
@@ -503,7 +506,7 @@ footer p {
     gap: 20px;
   }
   .section-one .whatsapp-community {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .section-two {
     margin-top: 3rem;
