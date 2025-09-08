@@ -219,17 +219,19 @@ header {
     >div:first-child {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 4rem;
         margin-bottom: 10px;
 
         .setup {
-            height: 10rem;
+            height: 25rem;
+            width: 200px;
             border-radius: 13.21px;
             box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
             overflow: hidden;
 
             video {
-                object-fit: scale-down;
+                object-fit: fill;
             }
         }
 
@@ -240,27 +242,43 @@ header {
         }
     }
 
-    .install-app {
+    main {
         display: flex;
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: column-reverse;
+        gap: 50px;
 
-        p {
-            font-weight: 500;
-            font-size: 1rem;
-            line-height: 24px;
-            text-align: center;
-            color: rgba(107, 114, 128, 1);
+        video {
+            height: 25rem;
+            width: 200px;
+            object-fit: fill;
+            border-radius: 13.21px;
+            flex: 0 0 auto;
+            overflow: hidden;
+            box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
         }
 
-        .buttons {
-            padding: 0px 15%;
+        .install-app {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
 
-            button {
-                width: 100%;
+            p {
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 24px;
+                text-align: center;
+                color: rgba(107, 114, 128, 1);
+            }
+
+            .buttons {
+                padding: 0px 15%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                button {
+                    width: 100%;
+                }
             }
         }
     }
@@ -606,20 +624,23 @@ footer {
             }
         }
 
-        >div:last-child {
+        >main {
             display: flex;
-            justify-content: space-between;
+            flex-direction: row;
+            justify-content: space-evenly;
 
             .setup {
                 display: flex;
-                height: 12rem;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
                 width: 35%;
-                border-radius: 20px;
-                box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
-                overflow: hidden;
-
+                
                 video {
-                    object-fit: scale-down;
+                    object-fit: fill;
+                    height: 12rem;
+                    width: fit-content;
+                    box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
                 }
             }
 
