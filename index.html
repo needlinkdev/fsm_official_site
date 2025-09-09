@@ -122,8 +122,7 @@
       <div class="install-app">
         <p>Install or use the web app of Fresher study master app</p>
         <div class="buttons">
-          <a href="https://github.com/needlinkdev/fsm_official_site/releases/download/v1.0.0/FSM.apk"
-            download="Freshers_Study_Master.apk">
+          <a href="releases/Fresher Study Master.apk" download="Fresher Study Master.apk">
             <button type="button" title="app" class="app-btn">
               Download App
               <span class="material-symbols-outlined">
@@ -469,8 +468,12 @@
 
   <section class="section-six">
     <h3>Join our Newsletter</h3>
-    <form>
-      <input type="email" placeholder="Enter email address" class="email-input" />
+    <form action="https://formspree.io/f/xrbajqoz" method="POST">
+      <input type="email" name="email" placeholder="Enter email address" class="email-input" />
+      <label class="hide">
+        Your message:
+        <textarea name="message">Hello, I would like to join your Newsletter.</textarea>
+      </label>
       <button type="submit" class="join-btn"><span class="material-symbols-outlined">
           arrow_outward
         </span></button>
