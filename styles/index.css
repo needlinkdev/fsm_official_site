@@ -200,43 +200,60 @@ header .support img {
 .section-three > div:first-child {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4rem;
   margin-bottom: 10px;
 }
 .section-three > div:first-child .setup {
-  height: 10rem;
+  height: 25rem;
+  width: 200px;
   border-radius: 13.21px;
   box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 .section-three > div:first-child .setup video {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .section-three > div:first-child h1 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 37px;
 }
-.section-three .install-app {
+.section-three main {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+.section-three main video {
+  height: 25rem;
+  width: 200px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 13.21px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+}
+.section-three main .install-app {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.section-three .install-app p {
+.section-three main .install-app p {
   font-weight: 500;
   font-size: 1rem;
   line-height: 24px;
   text-align: center;
   color: rgb(107, 114, 128);
 }
-.section-three .install-app .buttons {
+.section-three main .install-app .buttons {
   padding: 0px 15%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.section-three .install-app .buttons button {
+.section-three main .install-app .buttons button {
   width: 100%;
 }
 
@@ -531,30 +548,34 @@ footer p {
   .section-three > div:first-child .setup {
     display: none;
   }
-  .section-three > div:last-child {
+  .section-three > main {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
-  .section-three > div:last-child .setup {
+  .section-three > main .setup {
     display: flex;
-    height: 12rem;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
     width: 35%;
-    border-radius: 20px;
+  }
+  .section-three > main .setup video {
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 12rem;
+    width: -moz-fit-content;
+    width: fit-content;
     box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
   }
-  .section-three > div:last-child .setup video {
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
-  }
-  .section-three > div:last-child .install-app {
+  .section-three > main .install-app {
     width: 35%;
     gap: 20px;
   }
-  .section-three > div:last-child .install-app p {
+  .section-three > main .install-app p {
     font-size: 1.2rem;
   }
-  .section-three > div:last-child .install-app .buttons {
+  .section-three > main .install-app .buttons {
     padding: 0px 5%;
     gap: 15px;
   }
