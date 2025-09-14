@@ -220,18 +220,21 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 4rem;
+        gap: 3rem;
         margin-bottom: 10px;
 
-        .setup {
-            height: 25rem;
-            width: 200px;
-            border-radius: 13.21px;
-            box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
+        .what-students-think {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
 
             video {
-                object-fit: fill;
+                height: 8rem;
+                width: 100%;
+                border-radius: 13.21px;
+                box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                object-fit: contain;
             }
         }
 
@@ -294,14 +297,29 @@ header {
     // scrollbar-width: none; /* Firefox */
 
     .video {
-        border-radius: 13.21px;
-        flex: 0 0 auto;
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
         width: 270px;
-        height: 290px;
-        scroll-snap-align: start;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+
+        video {
+            border-radius: 13.21px;
+            flex: 0 0 auto;
+            overflow: hidden;
+            height: 150px;
+            width: 270px;
+            scroll-snap-align: start;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+            object-fit: contain;
+        }
+
+        p {
+            text-align: start;
+        }
+    }
+
+    >div:first-child {
+        display: none;
     }
 }
 
@@ -619,7 +637,7 @@ footer {
         justify-content: center;
 
         >div:first-child {
-            .setup {
+            .what-students-think {
                 display: none;
             }
         }
@@ -635,7 +653,7 @@ footer {
                 gap: 10px;
                 align-items: center;
                 width: 35%;
-                
+
                 video {
                     object-fit: fill;
                     height: 12rem;
@@ -668,6 +686,10 @@ footer {
         .video {
             border-radius: 20px;
             width: 390px;
+        }
+
+        >div:first-child {
+            display: flex;
         }
     }
 

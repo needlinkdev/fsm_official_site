@@ -9,6 +9,8 @@ window.addEventListener("scroll", () => {
     header.classList.add("header-without-border");
   }
 });
+window.addEventListener('load', handleVideoPlayback);
+window.addEventListener('resize', handleVideoPlayback);
 
 const screenshots = [
   {
@@ -67,6 +69,18 @@ const displayScreenshots = () => {
 
     closeBtn.addEventListener('click', () => screenshotSection.classList.add('hide'));
   });
+}
+
+function handleVideoPlayback() {
+  const mobileVideo = document.querySelector('.what-students-think video');
+  const webVideo = document.querySelector('.section-four div video');
+  if (window.innerWidth > 768) {
+    mobileVideo.pause();
+    webVideo.play();
+  } else {
+    mobileVideo.play();
+    webVideo.pause();
+  }
 }
 
 displayScreenshots();
