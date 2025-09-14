@@ -201,19 +201,22 @@ header .support img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
   margin-bottom: 10px;
 }
-.section-three > div:first-child .setup {
-  height: 25rem;
-  width: 200px;
+.section-three > div:first-child .what-students-think {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.section-three > div:first-child .what-students-think video {
+  height: 8rem;
+  width: 100%;
   border-radius: 13.21px;
   box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-}
-.section-three > div:first-child .setup video {
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .section-three > div:first-child h1 {
   font-weight: 600;
@@ -266,14 +269,27 @@ header .support img {
   scroll-snap-type: x none;
 }
 .section-four .video {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+.section-four .video video {
   border-radius: 13.21px;
   flex: 0 0 auto;
   overflow: hidden;
+  height: 150px;
   width: 270px;
-  height: 290px;
   scroll-snap-align: start;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section-four .video p {
+  text-align: start;
+}
+.section-four > div:first-child {
+  display: none;
 }
 
 .section-four::-webkit-scrollbar {
@@ -545,7 +561,7 @@ footer p {
     gap: 1.5rem;
     justify-content: center;
   }
-  .section-three > div:first-child .setup {
+  .section-three > div:first-child .what-students-think {
     display: none;
   }
   .section-three > main {
@@ -587,6 +603,9 @@ footer p {
   .section-four .video {
     border-radius: 20px;
     width: 390px;
+  }
+  .section-four > div:first-child {
+    display: flex;
   }
   .section-five {
     padding: 10px 2% 10px 5%;
