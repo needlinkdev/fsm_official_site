@@ -9,8 +9,8 @@ window.addEventListener("scroll", () => {
     header.classList.add("header-without-border");
   }
 });
-window.addEventListener('load', handleVideoPlayback);
-window.addEventListener('resize', handleVideoPlayback);
+// window.addEventListener('load', handleVideoPlayback);
+// window.addEventListener('resize', handleVideoPlayback);
 
 const screenshots = [
   {
