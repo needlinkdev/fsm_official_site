@@ -1,3 +1,17 @@
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    header.classList.add("header-with-border");
+    header.classList.remove("header-without-border");
+  } else {
+    header.classList.remove("header-with-border");
+    header.classList.add("header-without-border");
+  }
+});
+window.addEventListener('load', handleVideoPlayback);
+window.addEventListener('resize', handleVideoPlayback);
+
 const screenshots = [
   {
     id: 1,
@@ -25,10 +39,6 @@ const screenshots = [
   },
   {
     id: 7,
-    image: "images/screenshots/receipt.jpg",
-  },
-  {
-    id: 8,
     image: "images/screenshots/cgpa.jpg",
   },
 ];
@@ -40,7 +50,7 @@ const displayScreenshots = () => {
     const div = document.createElement('div');
     div.classList.add('page');
     div.id = `screenshot-${screenshot.id}`;
-    div.innerHTML = `<img src="${screenshot.image}" alt="header logo" />`;
+    div.innerHTML = `<img src="${screenshot.image}" alt="App preview ${screenshot.id}" />`;
 
     screenshotsUI.appendChild(div);
 
@@ -59,6 +69,18 @@ const displayScreenshots = () => {
 
     closeBtn.addEventListener('click', () => screenshotSection.classList.add('hide'));
   });
+}
+
+function handleVideoPlayback() {
+  const mobileVideo = document.querySelector('.what-students-think video');
+  const webVideo = document.querySelector('.section-four div video');
+  if (window.innerWidth > 768) {
+    mobileVideo.pause();
+    webVideo.play();
+  } else {
+    mobileVideo.play();
+    webVideo.pause();
+  }
 }
 
 displayScreenshots();

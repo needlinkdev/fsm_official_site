@@ -1,0 +1,698 @@
+img,
+video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", serif;
+}
+
+li {
+  list-style: none;
+  margin: 0px;
+}
+
+body {
+  text-align: center;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-btn {
+  background-color: #09B109;
+  color: white;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 4px 24px rgba(9, 177, 9, 0.6), inset 0 4px 4px rgba(255, 255, 255, 0.25);
+  padding: 7px 12px;
+  font-weight: 500;
+  font-size: 11px;
+}
+.app-btn span {
+  font-size: 20px;
+}
+
+.web-btn {
+  border: 1px solid #CCCCCC;
+  padding: 7px 12px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  font-size: 11px;
+}
+.web-btn span {
+  font-size: 20px;
+}
+
+svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 23px;
+  width: 23px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: linear-gradient(to bottom, rgb(178, 238, 178), white);
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .image {
+  width: 45px;
+  height: 45px;
+}
+header .support {
+  width: 26px;
+  height: 24px;
+}
+header .support img {
+  width: 26px;
+  height: 24px;
+}
+
+.header-with-border {
+  border-bottom: 1px solid rgba(176, 176, 176, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 1000;
+}
+
+.header-without-border {
+  border: none;
+  box-shadow: none;
+  z-index: 0;
+}
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6.3rem;
+  padding: 0px 16px;
+  gap: 40px;
+}
+.section-one .main {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.section-one .main .logo {
+  background-image: linear-gradient(to bottom right, #45A845 0, #45A845 60%, #1B421B);
+  border-radius: 19.5px;
+  padding: 10px;
+}
+.section-one .main .logo img {
+  width: 62px;
+  height: 62px;
+}
+.section-one .main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-one .main .content h2 {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 700;
+}
+.section-one .main .content p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8C8C8C;
+}
+.section-one .main .content > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section-one .main .content .buttons {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+}
+.section-one .whatsapp-community {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  text-align: start;
+}
+
+.section-two {
+  margin-top: 2rem;
+  padding: 10px 16px;
+}
+.section-two .screenshots {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+}
+.section-two .screenshots .page {
+  flex: 0 0 auto;
+  width: 120px;
+  scroll-snap-align: start;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.section-two .screenshots::-webkit-scrollbar {
+  display: none;
+}
+
+.section-three {
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-three > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 10px;
+}
+.section-three > div:first-child .what-students-think {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.section-three > div:first-child .what-students-think video {
+  height: 10rem;
+  width: 100%;
+  border-radius: 13.21px;
+  box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section-three > div:first-child h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 37px;
+}
+.section-three main {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+.section-three main video {
+  height: 25rem;
+  width: 200px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 13.21px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+}
+.section-three main .install-app {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.section-three main .install-app p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(107, 114, 128);
+}
+.section-three main .install-app .buttons {
+  padding: 0px 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-three main .install-app .buttons button {
+  width: 100%;
+}
+
+.section-four {
+  display: flex;
+  padding: 24px 14px 24px 14px;
+  margin-left: 10px;
+  gap: 8px;
+  overflow-x: auto;
+  scroll-snap-type: x none;
+}
+.section-four .video {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+.section-four .video video {
+  border-radius: 13.21px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  height: 150px;
+  width: 270px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section-four .video p {
+  text-align: start;
+}
+.section-four > div:first-child {
+  display: none;
+}
+
+.section-four::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+.section-five {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 16px;
+}
+.section-five h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.section-five .rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section-five .rating h2 {
+  font-weight: 600;
+  font-size: 51px;
+  letter-spacing: -2%;
+}
+.section-five .rating .stars {
+  display: flex;
+}
+.section-five .reviews {
+  gap: 12px;
+  display: flex;
+  padding: 20px 14px 20px 14px;
+  overflow-x: auto;
+  scroll-snap-type: x none;
+  width: 100%;
+}
+.section-five .reviews .review {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 24px;
+  border-radius: 13.21px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  width: 320px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+}
+.section-five .reviews .review img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-five .reviews .review main {
+  display: flex;
+  gap: 12px;
+}
+.section-five .reviews .review main div h3 {
+  font-size: 17.5px;
+  font-weight: 600;
+  text-align: start;
+}
+.section-five .reviews .review main div .stars {
+  display: flex;
+}
+.section-five .reviews .review p {
+  font-size: 0.9rem;
+  text-align: start;
+}
+.section-five .reviews::-webkit-scrollbar {
+  display: none;
+}
+
+.section-six {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.section-six h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.section-six form {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 12px;
+  width: 100%;
+}
+.section-six form input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+.section-six form:focus-within {
+  border-color: #45A845;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+.section-six form button {
+  background-image: linear-gradient(to bottom right, rgb(0, 172, 0), rgb(79, 220, 79));
+  box-shadow: 0px 0px 4px rgb(88, 101, 88);
+  padding: 4px 10px;
+  margin: 4px;
+  border-radius: 8px;
+  border: none;
+}
+.section-six form button span {
+  color: white;
+  font-size: 16px;
+}
+.section-six p {
+  font-size: 12px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer p {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.screenshot-section {
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 5rem 0rem;
+  justify-content: center;
+}
+.screenshot-section .close-btn {
+  padding-right: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: flex-end;
+  height: 26px;
+  color: white;
+}
+.screenshot-section .close-btn span {
+  font-size: 26px;
+}
+.screenshot-section .screenshot {
+  width: 100%;
+  height: 100%;
+}
+.screenshot-section .screenshot img {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(to bottom, rgb(178, 238, 178) 8%, white 20%);
+    background-repeat: no-repeat;
+    /* optional: keeps it fixed when scrolling */
+    background-size: cover;
+  }
+  .app-btn {
+    padding: 7px 20px;
+    font-size: 1.3rem;
+  }
+  .web-btn {
+    padding: 7px 20px;
+    font-size: 1.3rem;
+  }
+  header {
+    background: rgb(178, 238, 178);
+    padding: 2vh 5%;
+  }
+  header .support {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header .support img {
+    width: 26px;
+    height: 24px;
+  }
+  header .support h3 {
+    display: block;
+    font-size: 21.6px;
+    letter-spacing: -4%;
+    font-weight: 600;
+  }
+  header > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  header > div:last-child a {
+    display: flex;
+  }
+  .section-one {
+    margin-top: 15vh;
+    padding: 0px 5%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-one .main {
+    gap: 2.8rem;
+  }
+  .section-one .main .logo {
+    border-radius: 3rem;
+    padding: 24px;
+  }
+  .section-one .main .logo img {
+    width: 150px;
+    height: 150px;
+  }
+  .section-one .main .content {
+    gap: 40px;
+  }
+  .section-one .main .content h2 {
+    font-size: 36px;
+  }
+  .section-one .main .content p {
+    font-size: 1rem;
+  }
+  .section-one .main .content .buttons {
+    gap: 20px;
+  }
+  .section-one .whatsapp-community {
+    font-size: 1.2rem;
+  }
+  .section-two {
+    margin-top: 3rem;
+    padding: 10px 5%;
+  }
+  .section-two .screenshots {
+    gap: 18px;
+    padding-bottom: 2rem;
+  }
+  .section-two .screenshots .page {
+    width: 190px;
+    border-radius: 18px;
+  }
+  .section-three {
+    padding: 32px 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .section-three > div:first-child .what-students-think {
+    display: none;
+  }
+  .section-three > main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .section-three > main .setup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 35%;
+  }
+  .section-three > main .setup video {
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 12rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    box-shadow: 0 0 10.5px rgba(0, 0, 0, 0.2);
+  }
+  .section-three > main .install-app {
+    width: 35%;
+    gap: 20px;
+  }
+  .section-three > main .install-app p {
+    font-size: 1.2rem;
+  }
+  .section-three > main .install-app .buttons {
+    padding: 0px 5%;
+    gap: 15px;
+  }
+  .section-four {
+    display: flex;
+    padding: 3.2rem 5% 3.8rem 5%;
+    gap: 18px;
+  }
+  .section-four .video {
+    border-radius: 20px;
+    width: 390px;
+  }
+  .section-four > div:first-child {
+    display: flex;
+  }
+  .section-five {
+    padding: 10px 2% 10px 5%;
+  }
+  .section-five h3 {
+    font-size: 21px;
+    padding-left: 16px;
+  }
+  .section-five .rating {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-five .rating h2 {
+    font-size: 60px;
+  }
+  .section-five .reviews {
+    gap: 18px;
+  }
+  .section-five .reviews .review {
+    gap: 16px;
+    border-radius: 20px;
+    width: 360px;
+  }
+  .section-five .reviews .review img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section-five .reviews .review main {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-five .reviews .review main div h3 {
+    padding: 0px;
+    font-size: 20px;
+  }
+  .section-five .reviews .review p {
+    font-size: 1rem;
+  }
+  .section-six {
+    margin-top: 3.2rem;
+    margin-bottom: 5rem;
+    padding: 16px 5%;
+    gap: 10px;
+    align-items: start;
+    width: 40%;
+  }
+  .section-six h3 {
+    font-size: 22.6px;
+  }
+  .section-six p {
+    font-size: 15px;
+  }
+  footer {
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 20px;
+    gap: 5%;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  .screenshot-section {
+    width: 100vw;
+    height: 100vh;
+    padding: 10%;
+    gap: 30px;
+  }
+  .screenshot-section .close-btn {
+    padding-right: 0rem;
+    height: 30px;
+  }
+  .screenshot-section .close-btn span {
+    font-size: 30px;
+  }
+  .screenshot-section .screenshot {
+    width: 100%;
+    height: 100%;
+  }
+  .screenshot-section .screenshot img {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}/*# sourceMappingURL=index.css.map */
