@@ -562,6 +562,18 @@ footer p {
     justify-content: center;
   }
   .section-three > div:first-child .what-students-think {
+    gap: 0px;
+  }
+  .section-three > div:first-child .what-students-think video {
+    display: none;
+  }
+  .section-three > div:first-child .what-students-think video:fullscreen {
+    display: block !important;
+  }
+  .section-three > div:first-child .what-students-think video:-webkit-full-screen {
+    display: block !important;
+  }
+  .section-three > div:first-child .what-students-think p {
     display: none;
   }
   .section-three > main {

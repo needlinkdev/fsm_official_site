@@ -638,7 +638,24 @@ footer {
 
         >div:first-child {
             .what-students-think {
-                display: none;
+                gap: 0px;
+
+                video {
+                    display: none; // hidden by default since parent is hidden
+                }
+
+                // force only the video to show when it's fullscreen
+                video:fullscreen {
+                    display: block !important;
+                }
+
+                video:-webkit-full-screen {
+                    display: block !important;
+                }
+
+                p {
+                    display: none;
+                }
             }
         }
 
