@@ -639,6 +639,16 @@ footer {
         >div:first-child {
             .what-students-think {
                 display: none;
+
+                video {
+                    :fullscreen {
+                        display: block;
+                    }
+
+                    :-webkit-full-screen {
+                        display: block;
+                    }
+                }
             }
         }
 
